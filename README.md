@@ -144,7 +144,7 @@ given image. Faulty outputs are observed to be less confident than correct outpu
 deviation of the output increases when it is incorrect. And sometimes correct answers are also
 not confident outputs. 
 
-Learning rate is in the verge of divergence. Still searching for a better convergence.
+Learning rate is on the verge of divergence. Still searching for a better convergence.
 
 
 
