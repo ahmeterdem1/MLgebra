@@ -107,7 +107,9 @@ This file is formatted much alike .csv file format. A line is formatted as below
 
 layer_id starts from 0. But keep in mind that first layer in the model does not have
 any weights assigned. Assigned weights are to be between the layer and the layer before
-that. Also the first line of the file starts with probably 0:-1:... This is because
+that. For the given layers biases, node_id will be "b". 
+
+Also the first line of the file starts with probably -1:b:... This is because
 even though the first layer has no weights, it can still have biases. This line represents
 the biases of the first layer.
 
@@ -136,6 +138,10 @@ At the 16-neuron layer, sigmoid with cutoff results in all strictly binary vecto
 inputs to this layer were identical for the whole dataset, all backpropagation is blocked at
 this layer. Derivative of the sigmoid is 0 for x ∈ {0, 1}. All delta generated at this layer is
 0, and always 0. If you somehow make sigmoid work, please let us know.
+
+#### Updates
+
+%74.01 accuracy obtained. Learning rate was exactly 0.00105. Related weight file is uploaded.
 
 ## Testing
 
