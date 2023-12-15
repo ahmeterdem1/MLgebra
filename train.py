@@ -1,4 +1,5 @@
 from vectorgebra import *
+import os
 
 dec = False
 
@@ -19,6 +20,8 @@ class Node:
 class Model:
 
     def __init__(self, name: str = ""):
+        if os.path.exists(f"./{name}.weights"):
+            raise PathError()
         self.name = name
         self.layers = []
         self.errors = []
@@ -334,14 +337,15 @@ if __name__ == "__main__":
     
     """
 
-    model = Model("MyFirstModel")
+    model = Model("MyLastModel2")
     model.add_layer(784)
     model.add_layer(32)
     model.add_layer(16)
     model.add_layer(10)
-    model.finalize()
+    #model.finalize()
+    model.read_weight_file("./%7929.weights")
     logger.info("Model finalized, training is starting.")
-    lrate = 0.0001
+    lrate = 0.0000012
     for i in range(60000):
         model.single_train(all_partitions[i][0], label_partitions[i][0], lrate)
         if i % 1000 == 0:
