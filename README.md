@@ -141,7 +141,7 @@ this layer. Derivative of the sigmoid is 0 for x ∈ {0, 1}. All delta generated
 
 #### Updates
 
-Max accuracy is %79.52 for now.
+Max accuracy is %80.47 for now.
 
 A playground file added that works with numpy and cv2 to display the drawings as well as the
 models answers to it. First 100 images are displayed all together in a matrix. Models answers
