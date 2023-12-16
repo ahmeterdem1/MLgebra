@@ -144,7 +144,10 @@ this layer. Derivative of the sigmoid is 0 for x ∈ {0, 1}. All delta generated
 #### Updates
 
 Max accuracy is %80.49 for now. It seems like we have reached the local minima. Total weight 
-update count to reach this accuracy from the random start is around 1.5 million. 
+update count to reach this accuracy from the random start is around 1.5 million.
+
+At the latest %80.49 model no overlearning is observed. Performance is almost the same as in 
+the training data.
 
 A playground file added that works with numpy and cv2 to display the drawings as well as the
 models answers to it. First 100 images are displayed all together in a matrix. Models answers
@@ -152,7 +155,7 @@ are done so too.
 
 ## Testing
 
-With the weight file provided here, it is tested that the model is %72.34 answers correctly to the
+With the weight file provided here, it is tested that the model-%72.34 answers correctly to the
 given image. Faulty outputs are observed to be less confident than correct outputs. Standard 
 deviation of the output increases when it is incorrect. And sometimes correct answers are also
 not confident outputs. 
