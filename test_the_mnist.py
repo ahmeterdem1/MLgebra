@@ -7,7 +7,7 @@ model.add_layer(784)
 model.add_layer(32)
 model.add_layer(16)
 model.add_layer(10)
-model.read_weight_file("./%7952(2).weights")
+model.read_weight_file("./MyLastModel2.weights")
 
 logger.info("Model configured")
 
