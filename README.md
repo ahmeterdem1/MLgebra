@@ -122,6 +122,8 @@ that is already finalized. Before doing anything else, you always have to finali
 
 This example is trained by ".single_train()" function. After each image, weights are updated.
 A %72.34 accuracy is reached with learning rate at 0.001, weights initialized with Xavier/Glorot
+(Some of the recently added model weight files are originated from the %74 weight file which was
+initialized via He initialization, and no modulation was done to biases. It performed better.)
 method and biases are uniformly generated between -2 and 2. Generated weights vector gets smaller
 hyperbolically as we proceed towards the output layer. This is done because with a lot of testing
 it is observed that, weight updates as percentages are a lot smaller in the input layer compared to
@@ -141,7 +143,8 @@ this layer. Derivative of the sigmoid is 0 for x ∈ {0, 1}. All delta generated
 
 #### Updates
 
-Max accuracy is %80.47 for now.
+Max accuracy is %80.49 for now. It seems like we have reached the local minima. Total weight 
+update count to reach this accuracy from the random start is around 1.5 million. 
 
 A playground file added that works with numpy and cv2 to display the drawings as well as the
 models answers to it. First 100 images are displayed all together in a matrix. Models answers

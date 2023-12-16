@@ -343,9 +343,9 @@ if __name__ == "__main__":
     model.add_layer(16)
     model.add_layer(10)
     #model.finalize()
-    model.read_weight_file("./weights/%8046.weights")
+    model.read_weight_file("./weights/%8049.weights")
     logger.info("Model finalized, training is starting.")
-    lrate = 0.00000017
+    lrate = 0.00000009
     for i in range(60000):
         model.single_train(all_partitions[i][0], label_partitions[i][0], lrate)
         if i % 1000 == 0:
