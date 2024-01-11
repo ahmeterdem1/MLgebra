@@ -345,7 +345,7 @@ if __name__ == "__main__":
     #model.finalize()
     model.read_weight_file("./weights/%8049.weights")
     logger.info("Model finalized, training is starting.")
-    lrate = 0.00000009
+    lrate = 0.000004
     for i in range(60000):
         model.single_train(all_partitions[i][0], label_partitions[i][0], lrate)
         if i % 1000 == 0:

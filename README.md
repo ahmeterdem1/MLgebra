@@ -21,6 +21,17 @@ Let there be no need for another language if you want so. Yes of course
 writing the code in C++ or something is a lot faster compared to Python, 
 but Python is also not too slow. 
 
+## Notes
+
+A successor of this project has been created and currently being developed.
+The [MLgebra](https://github.com/ahmeterdem1/ml) library provides easy access
+to the algorithms used here with a cleaner control. 
+
+A model with the same structure as studied in this project has been trained to
+%84.53 accuracy with the MLgebra library and the weight file can be found here
+in the dedicated directory. Codes here aren't updated according to the library,
+and left as they were before it.
+
 ## Toolkit
 
 The only requirement for this project is [vectorgebra](https://pypi.org/project/vectorgebra/).
