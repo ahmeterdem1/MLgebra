@@ -32,6 +32,10 @@ A model with the same structure as studied in this project has been trained to
 in the dedicated directory. Codes here aren't updated according to the library,
 and left as they were before it.
 
+%87.24 accuracy has been reached by a model of 784x128x10. The result was better
+because the vanishing gradient problem was less important. Generally, models 
+created with MLgebra suffer from some amount of vanishing gradient. 
+
 ## Toolkit
 
 The only requirement for this project is [vectorgebra](https://pypi.org/project/vectorgebra/).
